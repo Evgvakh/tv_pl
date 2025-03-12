@@ -43,7 +43,7 @@ app.use((err, req, res, next) => {
     res.status(500).send({ errorMessage: err.message || 'Internal Server Error', data: null });
 });
 
-app.listen(5051 || process.env.PORT, (err) => {
+app.listen(process.env.PORT, (err) => {
     if (err) {
         console.log('Server down')
     } else {

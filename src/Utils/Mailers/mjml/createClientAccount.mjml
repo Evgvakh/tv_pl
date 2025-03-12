@@ -1,0 +1,40 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Helvetica, Arial, sans-serif" />
+      <mj-text font-size="16px" color="#333333" line-height="24px" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .header { 
+        background-color: #ADD8E6; 
+        color: #FFFFFF; 
+        text-align: center; 
+        font-size: 24px; 
+        font-weight: bold; padding: 20px; } 
+        .body-text { 
+          background-color:hsla(187, 100.00%, 98.40%, 0.98); 
+          color: #333333; 
+          padding: 20px; 
+          }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#f0f4f8" width="100%">
+    <!-- Header Section -->
+    <mj-section padding="0">
+      <mj-column >
+        <mj-text css-class="header"> {{header}} для {{email}}. </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Body Section -->
+    <mj-section padding="20px" text-align="center">
+      <mj-column width="90%" background-color="rgba(239, 255, 255, 0.6)">
+        <mj-text css-class="body-text" >
+          Уважаемый клиент,<br /><br />
+          Пароль {{isPasswordReset}} {{password}}<br /><br />
+          Вы можете изменить пароль в нашем telegram-приложении по ссылке:
+          <a href="https://t.me/tvt_planning_bot" style="color: #1e90ff; text-decoration: none">телеграм-бот</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
